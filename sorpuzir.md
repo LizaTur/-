@@ -16,3 +16,12 @@ end
 return a
 end
 bubblesort(a) = bubblesort!(deepcopy(a))
+
+function issorted(A)
+for i in 1:length(A)-1
+if A[i+1]<A[i]
+return false
+end
+end
+return true
+end
